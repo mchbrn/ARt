@@ -1,16 +1,25 @@
 function markerEventAction(el) {
-    var marker = el;
+    let marker = el;
 
     marker.addEventListener('markerFound', function() 
     {
-        var markerId = marker.id;
-        console.log('markerFound', markerId);
+        let markerID = marker.id;
+        console.log('markerFound', markerID);
+        
+        let div = window.parent.document.querySelector("#info");
+        let button = window.parent.document.createElement("button");
+        button.type = "button";
+        button.innerHTML = "info";
+        div.appendChild(button);
     });
 
     marker.addEventListener('markerLost', function() 
     {
-        var markerId = marker.id;
-        console.log('markerLost', markerId);
+        let markerID = marker.id;
+        console.log('markerLost', markerID);
+
+        let div = window.parent.document.querySelector("#info");
+        div.innerHTML = "";
     });
 }
 
