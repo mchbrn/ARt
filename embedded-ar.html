@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <!-- import a-frame -->
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+        <!-- import arjs with markers -->
+        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+        <!-- import events.js -->
+        <script src="https://rawgit.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-click-events/events.js"></script>
+        <!-- import component.js -->
+        <script src="js/markers.js"></script>
+	</head>
+    <body style="margin : 0px; overflow: hidden;">
+        <a-scene id="ARt-scene" embedded arjs="sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: AR_MATRIX_CODE_3x3_PARITY65;" vr-mode-ui="enabled: false">
+			<a-marker markerhandler_zero emitevents="true" cursor="fuse: false; rayOrigin: mouse" class="marker" id="marker_zero" type="barcode" value="0">
+				<a-plane class="plane" id="plane_zero" src="img/0.*" width="1.98" height="1.048" rotation="-90 0 0"></a-plane>
+			</a-marker>
+			<a-marker markerhandler_six emitevents="true" cursor="fuse: false; rayOrigin: mouse" class="marker" id="marker_six" type="barcode" value="6">
+				<a-plane class="plane" id="plane_six" src="img/6.*" width="1.98" height="1.048" rotation="-90 0 0"></a-plane>
+			</a-marker>
+			<a-marker markerhandler_nine emitevents="true" cursor="fuse: false; rayOrigin: mouse" class="marker" id="marker_nine" type="barcode" value="9">
+				<a-plane class="plane" id="plane_nine" src="img/9.*" width="1.98" height="1.048" rotation="-90 0 0"></a-plane>
+			</a-marker>
+			<a-marker markerhandler_twelve emitevents="true" cursor="fuse: false; rayOrigin: mouse" class="marker" id="marker_twelve" type="barcode" value="12">
+				<a-plane class="plane" id="plane_twelve" src="img/12.*" width="1.98" height="1.048" rotation="-90 0 0"></a-plane>
+			</a-marker>
+			<a-marker markerhandler_fifteen emitevents="true" cursor="fuse: false; rayOrigin: mouse" class="marker" id="marker_fifteen" type="barcode" value="15">
+				<a-plane class="plane" id="plane_fifteen" src="img/15.*" width="1.98" height="1.048" rotation="-90 0 0"></a-plane>
+			</a-marker>
+			<a-marker markerhandler_seventeen emitevents="true" cursor="fuse: false; rayOrigin: mouse" class="marker" id="marker_seventeen" type="barcode" value="17">
+				<a-plane class="plane" id="plane_seventeen" src="img/17.*" width="1.98" height="1.048" rotation="-90 0 0"></a-plane>
+			</a-marker>
+			<a-marker markerhandler_eighteen emitevents="true" cursor="fuse: false; rayOrigin: mouse" class="marker" id="marker_eighteen" type="barcode" value="18">
+				<a-plane class="plane" id="plane_eighteen" src="img/18.*" width="1.98" height="1.048" rotation="-90 0 0"></a-plane>
+			</a-marker>
+			<a-marker markerhandler_twenty emitevents="true" cursor="fuse: false; rayOrigin: mouse" class="marker" id="marker_twenty" type="barcode" value="20">
+				<a-plane class="plane" id="plane_twenty" src="img/20.*" width="1.98" height="1.048" rotation="-90 0 0"></a-plane>
+			</a-marker>
+			<a-marker markerhandler_twentythree emitevents="true" cursor="fuse: false; rayOrigin: mouse" class="marker" id="marker_twentythree" type="barcode" value="23">
+				<a-plane class="plane" id="plane_twentythree" src="img/23.*" width="1.98" height="1.048" rotation="-90 0 0"></a-plane>
+			</a-marker>
+			<a-marker markerhandler_twentyfour emitevents="true" cursor="fuse: false; rayOrigin: mouse" class="marker" id="marker_twentyfour" type="barcode" value="24">
+				<a-plane class="plane" id="plane_twentyfour" src="img/24.*" width="1.98" height="1.048" rotation="-90 0 0"></a-plane>
+			</a-marker>
+			<a-marker markerhandler_twentyseven emitevents="true" cursor="fuse: false; rayOrigin: mouse" class="marker" id="marker_twentyseven" type="barcode" value="27">
+				<a-plane class="plane" id="plane_twentyseven" src="img/27.*" width="1.98" height="1.048" rotation="-90 0 0"></a-plane>
+			</a-marker>
+			<a-marker markerhandler_twentynine emitevents="true" cursor="fuse: false; rayOrigin: mouse" class="marker" id="marker_twentynine" type="barcode" value="29">
+				<a-plane class="plane" id="plane_twentynine" src="img/29.*" width="1.98" height="1.048" rotation="-90 0 0"></a-plane>
+			</a-marker>
+			<a-marker markerhandler_thirty emitevents="true" cursor="fuse: false; rayOrigin: mouse" class="marker" id="marker_thirty" type="barcode" value="30">
+				<a-plane class="plane" id="plane_thirty" src="img/30.*" width="1.98" height="1.048" rotation="-90 0 0"></a-plane>
+			</a-marker>
+            <a-entity camera></a-entity>
+        </a-scene>
+    </body>
+</html>

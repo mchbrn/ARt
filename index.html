@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <!-- we import arjs version without NFT but with marker + location based support -->
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-    <body style="margin : 0px; overflow: hidden;">
-        <a-scene embedded arjs>
-            <a-marker preset="hiro">
-                <a-entity
-                    position="0 0 0"
-                    scale="0.05 0.05 0.05"
-                    gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf">
-                </a-entity>
-            </a-marker>
-            <a-entity camera></a-entity>
-        </a-scene>
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body style="margin: 0px; overflow: hidden;">
+        <div class="flex-container">
+            <iframe id="ar" src="embedded-ar.html" title="Embedded ar.js app"></iframe>
+            <div id="buttons">
+                <a href="ists/">
+                    <button type="button">ARtists</button>
+                </a>
+            </div>
+        </div>
     </body>
 </html>
